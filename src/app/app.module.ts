@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { Store } from 'store';
 
 // feature modules
+import { AuthModule } from '../auth/auth.module';
+
 
 // containers
 import { AppComponent } from './containers/app/app.component';
@@ -17,7 +19,8 @@ export const ROUTES: Routes = [];
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    AuthModule
   ],
   declarations: [
     AppComponent
@@ -31,15 +34,3 @@ export const ROUTES: Routes = [];
 })
 export class AppModule {}
 
-/*
-var config = {
-    apiKey: "AIzaSyBBDTDKEvW9IbY8l0B4Os4uDkXRYyHbFqU",
-    authDomain: "fitness-app-b8c12.firebaseapp.com",
-    databaseURL: "https://fitness-app-b8c12.firebaseio.com",
-    projectId: "fitness-app-b8c12",
-    storageBucket: "fitness-app-b8c12.appspot.com",
-    messagingSenderId: "743293821943"
-  };
-
-
-*/
