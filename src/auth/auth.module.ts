@@ -22,7 +22,6 @@ export const ROUTES: Routes = [
     }
 ];
 
-
 export const firebaseConfig: FirebaseAppConfig = {
     apiKey: "AIzaSyBBDTDKEvW9IbY8l0B4Os4uDkXRYyHbFqU",
     authDomain: "fitness-app-b8c12.firebaseapp.com",
@@ -31,11 +30,6 @@ export const firebaseConfig: FirebaseAppConfig = {
     storageBucket: "fitness-app-b8c12.appspot.com",
     messagingSenderId: "743293821943"
   };
-
-
-
-
-
 
 //Feacture module.
 @NgModule({
