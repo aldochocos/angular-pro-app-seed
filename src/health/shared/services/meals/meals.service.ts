@@ -10,7 +10,6 @@ import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 
 import { AuthService } from '../../../../auth/shared/services/auth/auth.service';
-import { firebaseConfig } from '../../../../auth/auth.module';
 
 export interface Meal {
     name: string,
